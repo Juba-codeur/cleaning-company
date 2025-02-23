@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CleanPro - Service de Nettoyage</title>
+  <!-- Link to custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- AOS CSS for scroll animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+  <!-- Canvas for soap bubble animation -->
+  <canvas id="bubbleCanvas"></canvas>
+
+  <!-- Navbar with animated hamburger menu (desktop uses original navbar) -->
+  <header>
+    <nav>
+      <div class="logo">CleanPro</div>
+      <!-- Hamburger menu: visible on mobile -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#offres">Offres</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content" data-aos="fade-up">
+      <h1 class="hero-title">Redécouvrez la Propreté</h1>
+      <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+        L'innovation au service de votre espace de vie.
+      </p>
+      <a href="#offres" class="cta-button" data-aos="fade-up" data-aos-delay="400">
+        Découvrez nos offres
+      </a>
+    </div>
+    <!-- Upgraded Scroll Indicator (positioned outside hero-content) -->
+    <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="600">
+      <div class="arrow" style="animation-delay: 0s;"></div>
+      <div class="arrow" style="animation-delay: 0.2s;"></div>
+      <div class="arrow" style="animation-delay: 0.4s;"></div>
+      <span class="scroll-text">Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- Offres Section -->
+  <section id="offres">
+    <h2 data-aos="fade-up">Nos offres</h2>
+    <div class="plans">
+      <div class="plan" data-aos="zoom-in">
+        <h3>Basique</h3>
+        <p>Nettoyage hebdomadaire</p>
+        <p class="price">50€/mois</p>
+      </div>
+      <div class="plan" data-aos="zoom-in" data-aos-delay="200">
+        <h3>Standard</h3>
+        <p>Nettoyage bi-hebdomadaire</p>
+        <p class="price">90€/mois</p>
+      </div>
+      <div class="plan" data-aos="zoom-in" data-aos-delay="400">
+        <h3>Premium</h3>
+        <p>Nettoyage quotidien</p>
+        <p class="price">150€/mois</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2 data-aos="fade-up">Contactez-nous</h2>
+    <form data-aos="fade-up" data-aos-delay="200">
+      <input type="text" placeholder="Nom" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Votre message" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
